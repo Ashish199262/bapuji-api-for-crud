@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bapujidbModelStoreContainer" CdmEntityContainer="bapujidbEntities">
+    <EntitySetMapping Name="PERSON_MASTER_TBL">
+      <EntityTypeMapping TypeName="bapujidbModel.PERSON_MASTER_TBL">
+        <MappingFragment StoreEntitySet="PERSON_MASTER_TBL">
+          <ScalarProperty Name="PERSONID" ColumnName="PERSONID" />
+          <ScalarProperty Name="PersonName" ColumnName="PersonName" />
+          <ScalarProperty Name="PersonAdd1" ColumnName="PersonAdd1" />
+          <ScalarProperty Name="PersonAdd2" ColumnName="PersonAdd2" />
+          <ScalarProperty Name="PersonCity" ColumnName="PersonCity" />
+          <ScalarProperty Name="PersonState" ColumnName="PersonState" />
+          <ScalarProperty Name="PersonCountry" ColumnName="PersonCountry" />
+          <ScalarProperty Name="PersonPhone1" ColumnName="PersonPhone1" />
+          <ScalarProperty Name="PersonPhone2" ColumnName="PersonPhone2" />
+          <ScalarProperty Name="PersonEmail1" ColumnName="PersonEmail1" />
+          <ScalarProperty Name="PersonEmail2" ColumnName="PersonEmail2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bapujidbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="PERSON_MASTER_TBL">
+    <Key>
+      <PropertyRef Name="PERSONID" />
+    </Key>
+    <Property Name="PERSONID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PersonName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PersonAdd1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PersonAdd2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PersonCity" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PersonState" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PersonCountry" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PersonPhone1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PersonPhone2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PersonEmail1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PersonEmail2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="bapujidbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PERSON_MASTER_TBL" EntityType="Self.PERSON_MASTER_TBL" />
+  </EntityContainer>
+</Schema>
